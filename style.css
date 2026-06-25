@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.nav-bar{
+    background-color: #1a089f;
+    color: #fff;
+    display: flex;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-links{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+}
+
+/* Utility: lay out list items in responsive columns */
+ul.columns{
+    column-count: 2;
+    column-gap: 1.5rem;
+    padding: 0;
+}
+
+ul.columns li{
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    padding: 0.25rem 0;
+}
+
+@media (max-width: 680px){
+    ul.columns{
+        column-count: 1;
+    }
+}
