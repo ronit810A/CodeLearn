@@ -2,48 +2,175 @@
     margin: 0;
     padding:0;
 }
+body{
+    background: 
+        linear-gradient(180deg, #0d0836 0%, #06041a 40% ); 
+        color: #fff;
+       
+}
+/* nav-bar */
 .nav-bar{
-    background-color: #1a089f;
+    background: 
+        linear-gradient(180deg, #0d0836 0% );  
     color: #fff;
     display: flex;
     text-align: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom:1px solid #477d92;
+    position:fixed ;
+    width: 100%;
 }
-ul{
-    list-style: none;
+.nav-logo{
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 30px;
+}
+.nav-links{
+    margin-left: 20%;
+    display: flex;
+    gap:50px;
+    font-size: 18px;
 }
 a{
     text-decoration: none;
+    color: #fff;
 }
-.nav-links{
-    position: absolute;
+.nav-btn{
+    margin-left:15%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 20px;
 }
-
-.nav-menu{
+.login-btn{
+    padding: 8px;
+    font-size: 15px;
+    background-color: #0d0836;
+    border: 1px solid #f9f8fc ;
+    color:#fff ;
+    border-radius: 8px;   
+}
+.signup-btn{
+    
+    padding: 7px;
+    font-size: 20px;
+    background-color: #2408fc;
+    border: 1px solid #2408fc ;
+    color:#fff ;
+    border-radius: 8px;
+}
+/* about section */
+.about-container{
+    padding-TOP: 7%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.about-content{
+    text-align: left;
+    margin-top:70px;
+    padding:50px;
+}
+.about-content h1{
+    font-size:80px;
+}
+.about-content p{
+    margin-top:30px;
+    font-size:25px;
+}
+.about-img{
+    padding:40px;
+}
+.learning-btn{
+    padding: 10px;
+    font-size: 20px;
+    background-color: #2408fc;
+    border: 1px solid #2408fc ;
+    color:#fff;
+    border-radius: 8px;
+}
+.explore-btn{
+    margin-left:30px;
+    padding: 10px;
+    font-size: 20px;
+    background-color:#06041a ;
+    border: 1px solid #f1f1f5 ;
+    color:#fff;
+    border-radius: 8px;
+}
+.about-corse{
+    display:flex;
+    background-color: #18162e;
+    border: 2px solid #18162e;
+    border-radius: 8px;
+    padding:10px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 30px;
+}
+.about-corse p{
+    font-size: 23px;
+    color: #f1f1f5c3;
+}
+.about-corse a{
+    font-size: 23px;
+    text-decoration: none;
+    color: #2408fc;
+    margin-left: 35%;
+}
+/* courses section */
+main{
+    background-color: #fdfdfff5;
+    color:#06041a;
+}
+.courses-container{
+    padding: 20px;
+    text-align: center;
+}
+.courses-path{
+    margin-top:20px;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 0;
+    justify-content: space-evenly;
+}
+.courses{
+    height: 250px;
+    width: 230px;
+    background-color: #ffffff;
+    border:2px solid #ffffff;
+    border-radius:15px;
+    padding:20px;
+    text-align: left;
+}
+.courses p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.courses a {
+    display: flex;
+    margin-top: 30%;
+    text-decoration: none;
+    color: #2408fc;
+    font-size: 20px;
+}
+/* choose-section */
+.Choose-container{
+    margin: 30px;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #e5e5ee;
+    text-align: center;
+}
+.Choose-content{
+    display: flex;
+    justify-content: space-evenly;
+     padding:20px;
+}
+.Choose-content p{
+    padding: 10px;
+    font-size: 20px;
+}
+/* footer-section */
+footer{
+    text-align:center;
+    padding: 20px;
 }
 
-/* Utility: lay out list items in responsive columns */
-ul.columns{
-    column-count: 2;
-    column-gap: 1.5rem;
-    padding: 0;
-}
-
-ul.columns li{
-    -webkit-column-break-inside: avoid;
-    break-inside: avoid;
-    padding: 0.25rem 0;
-}
-
-@media (max-width: 680px){
-    ul.columns{
-        column-count: 1;
-    }
-}
