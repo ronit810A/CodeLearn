@@ -25,6 +25,9 @@ body{
     margin-left: 30px;
     padding: 10px;
     font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .nav-links{
     margin-left: 20%;
@@ -60,7 +63,7 @@ a{
 }
 /* about section */
 .about-container{
-    padding-TOP: 7%;
+    padding-TOP: 5%;
     display:flex;
     justify-content: space-evenly;
 }
@@ -118,8 +121,6 @@ a{
 }
 /* courses section */
 main{
-    margin: 20px;
-    border-radius: 8px;
     background-color: #fdfdfff5;
     color:#06041a;
 }
@@ -158,11 +159,13 @@ main{
     border-radius: 8px;
 }
 /* choose-section */
-.Choose-container{
+.choose-ter{
     margin: 50px;
-    padding: 10px;
-    border-radius: 16px;
     background-color: #e5e5ee;
+    border-radius: 16px 16px 0 0;
+}
+.Choose-container{
+    padding: 10px;  
     text-align: center;
 }
 .Choose-content{
@@ -184,14 +187,99 @@ main{
 }
 /* testimonials-section */
 .testimonials-container{
-    margin: 50px;
+    border-bottom:1px solid #477d92;
     background-color: #06041a;
+    border-radius: 16px 16px 0 0;
     color: #e5e5ee;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.testimonials-content{
+    text-align: left;
+    height: 250px;
+    width: 300px;
+    background-color: #0d0836;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.testimonials-content h2{
+    padding: 10px;
+}
+.testimonials-content p{
+    padding: 10px;
+    font-size: 18px;
+}
+.testimonials-img{
+    margin-top: 20px;
+}
+.learning-btn2{
+    margin-top:40px ;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #2408fc;
+    border: 1px solid #2408fc ;
+    color:#fff;
+    border-radius: 8px;
 }
 /* footer-section */
-footer{
+footer p{
     text-align:center;
     padding: 20px;
 }
+.footer-containere{
+    border-bottom:1px solid #477d92;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.footer-content{
+    text-align: center;
+    font-size: 18px;
+}
+.footer-logo{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-content p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #aaaaaa;
+}
+.footer-panel{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+.footer-logo li{
+    list-style: none;
+    font-size: 18px;
+}
+.footer-panel a{
+    text-decoration: none;
+    color: #aaaaaa;
+}
+.footer-content form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+footer input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaaaaa;
+}
+footer button{
+    padding: 10px;
+    font-size: 20px;
+    background-color: #2408fc;
+    border: 1px solid #2408fc ;
+    color:#fff;
+    border-radius: 8px;
+}
+
+
 
